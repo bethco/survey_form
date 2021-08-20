@@ -1,0 +1,89 @@
+/*****************************************************************************
+**
+**    Title:      style.css
+**    Project:    Survey Form
+**    Author:     Bethany Cohen
+**    Contact:    <deskofbethany@gmail.com>
+**    GitHub:     https://github.com/bethco
+** 
+*****************************************************************************/
+body {
+    background: #FFFFFF;
+    color: #4f5d75;
+    font-family: 'Zen Loop',cursive, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #2d3142;
+    text-align: center;
+    font-size: 3em;
+}
+
+p {
+    color: #bfc0c0;
+    text-align: center;
+    font-size: 2em;
+}
+
+label {
+    color: #ef8354;
+    font-size: 1.5em;
+    display: block;
+    max-width: 270px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+label label {
+    font-size: .65em;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#flavor {
+    text-align: center;
+}
+
+#cone {
+    max-width:none;
+    text-align: center;
+}
+    #cone b {
+        display: inline;
+    }
+    #cone label {
+        display: inline;
+    }
+
+#toppings {
+    margin: .5em auto;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "title box1 box2"
+                         ". box1 box2"
+                         ". box1 box2";
+
+    justify-items: start;
+    align-items: start;
+}
+    #toppings b {
+        grid-area: title;
+    }
+
+    #toppings .box1 {
+        grid-area: box1;
+    }
+
+    #toppings .box2 {
+        grid-area: box2;
+    }
+    #toppings .box1 label,
+    #toppings .box2 label {
+        text-align: left;
+    }
+
+#textarea {
+    text-align: center;
+}
